@@ -35,19 +35,6 @@ function my_style_loader_tag_function($tag){
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-/* Load Fonts dot com */
-
-function extra_css () {
-	wp_register_style( 'font', '//fast.fonts.net/cssapi/68625beb-068b-48fd-a947-1e7bd7f471ce.css' );
-	wp_enqueue_style( 'font' );
-} 
-
-add_action('wp_print_styles', 'extra_css');
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
 /* Remove Date from Yoast SEO */
 
 add_filter( 'wpseo_show_date_in_snippet_preview', false);
